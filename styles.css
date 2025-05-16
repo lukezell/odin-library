@@ -1,0 +1,91 @@
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+fieldset div {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px
+}
+
+fieldset label {
+    min-width: 80px;
+    text-align: right;
+}
+
+fieldset input {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+@property --bGradientHex1 {
+    syntax: "<color>";
+    initial-value: #000;
+    inherits: false;
+}
+
+@property --bGradientHex2 {
+    syntax: "<color>";
+    initial-value: #000;
+    inherits: false;
+}
+
+fieldset button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    background: linear-gradient(38.83deg, var(--bGradientHex1), var(--bGradientHex2));
+    transition: --bGradientHex1 .4s, --bGradientHex1 .4s;
+}
+fieldset button:hover {
+    --bGradientHex1: #0166ff;
+    --bGradientHex2: #14d4ed;
+}
+
+
+form {
+    max-width: 300px;
+    margin: 0px auto 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid #a1a1a1;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+th {
+    font-weight: 600;
+    color: #fff;
+}
+
+thead tr {
+    background-color: #000;
+}
+
+section {
+    padding: 40px;
+}
+
+.finished:hover {
+    cursor: pointer;
+}

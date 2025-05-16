@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <script async src="script.js" ></script>
+</head>
+<body>
+    <section>
+        <form action="script.js" method="get">
+            <fieldset>
+                <legend>Add Book</legend>
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                </div>
+
+                <div>
+                    <label for="pages"># of Pages:</label>
+                    <input type="number" name="pages" id="pages">
+                </div>
+            
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th># of Pages</th>
+                    <th>Finished</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+                <!--<tr>
+                    <td>12345</td>
+                    <td>Brook by pages</td>
+                    <td>Anastasia Eloquence</td>
+                    <td>432</td>
+                    <td class="finished">No</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
