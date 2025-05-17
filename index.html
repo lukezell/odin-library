@@ -14,7 +14,7 @@
 </head>
 <body>
     <section>
-        <form action="script.js" method="get">
+        <form method="get">
             <fieldset>
                 <legend>Add Book</legend>
                 <div>
@@ -32,8 +32,12 @@
                     <input type="number" name="pages" id="pages">
                 </div>
             
+                <div id="checkContainer">
+                    <label for="finished">Finished:</label>
+                    <input type="checkbox" id="finished" name="finished" value="true">
+                </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </fieldset>
         </form>
         
@@ -44,7 +48,8 @@
                     <th>Title</th>
                     <th>Author</th>
                     <th># of Pages</th>
-                    <th>Finished</th>
+                    <th>Finished<sup>i</sup></th>
+                    <!--<th>Remove<sup>i</sup></th>-->
                 </tr>
             </thead>
             <tbody id="tBody">
